@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e1b872f-89ed-4a74-82b1-6943b9b6f5a2" name="Default Changelist" comment="" />
+    <list default="true" id="6e1b872f-89ed-4a74-82b1-6943b9b6f5a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/uploads/jobs/extreme-sensio.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/jobs/sensio-labs.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/JobController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/JobFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +37,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -133,6 +147,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1VVrbqLPDMBDUKRhkPSnWCh0Fzm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -141,10 +156,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads/jobs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\testphp\Jobeet\public\uploads\jobs" />
       <recent name="C:\xampp\htdocs\testphp\Jobeet" />
     </key>
   </component>
@@ -174,7 +190,10 @@
       <workItem from="1577351129919" duration="6083000" />
       <workItem from="1577415098117" duration="14928000" />
       <workItem from="1577442666845" duration="173000" />
-      <workItem from="1577443335865" duration="694000" />
+      <workItem from="1577443335865" duration="804000" />
+      <workItem from="1577676200822" duration="6578000" />
+      <workItem from="1577696707926" duration="2867000" />
+      <workItem from="1577761776857" duration="964000" />
     </task>
     <servers />
   </component>
@@ -186,14 +205,14 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1577350026592" />
-    <state x="795" y="418" key="NewPhpFileDialog" timestamp="1577357543132">
+    <state x="501" y="417" key="NewPhpFileDialog" timestamp="1577697376550">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="795" y="418" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1577357543132" />
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1577442667080">
+    <state x="501" y="417" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1577697376550" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1577761935482">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1577442667080" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1577761935482" />
     <state x="296" y="226" key="run.anything.popup" timestamp="1577357828611">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
