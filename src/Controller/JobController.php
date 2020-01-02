@@ -4,6 +4,10 @@ use App\Entity\Job;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
+use Doctrine\ORM\EntityManagerInterface;
+use App\Entity\Category;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
+
 class JobController extends AbstractController
 {
     /**
@@ -13,11 +17,12 @@ class JobController extends AbstractController
      *
      * @return Response
      */
-    public function list(): Response
+    public function list(EntityManagerInterface $em) : Response
     {
-        $jobs = $this->getDoctrine()->getRepository(Job::class)->findAll();
+        $categories = $em->getRepository(Category::class)->findWithActiveJobs();
+
         return $this->render('job/list.html.twig', [
-            'jobs' => $jobs,
+            'categories' => $categories,
         ]);
     }
 
@@ -25,6 +30,8 @@ class JobController extends AbstractController
      * Finds and displays a job entity.
      *
      * @Route("job/{id}", name="job.show", methods="GET", requirements={"id" = "\d+"})
+     *
+     * @Entity("job", expr="repository.findActiveJob(id)")
      *
      * @param Job $job
      *
