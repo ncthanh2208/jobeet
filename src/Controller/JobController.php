@@ -8,6 +8,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\Category;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
 
+
 class JobController extends AbstractController
 {
     /**

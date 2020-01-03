@@ -1,11 +1,9 @@
 <?php
 namespace App\DataFixtures;
-
 use App\Entity\Job;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-
 class JobFixtures extends Fixture implements DependentFixtureInterface
 {
     /**
@@ -30,7 +28,6 @@ class JobFixtures extends Fixture implements DependentFixtureInterface
         $jobSensioLabs->setToken('job_sensio_labs');
         $jobSensioLabs->setEmail('job@example.com');
         $jobSensioLabs->setExpiresAt(new \DateTime('+30 days'));
-
         $jobExtremeSensio = new Job();
         $jobExtremeSensio->setCategory($manager->merge($this->getReference('category-design')));
         $jobExtremeSensio->setType('part-time');
@@ -46,7 +43,6 @@ class JobFixtures extends Fixture implements DependentFixtureInterface
         $jobExtremeSensio->setToken('job_extreme_sensio');
         $jobExtremeSensio->setEmail('job@example.com');
         $jobExtremeSensio->setExpiresAt(new \DateTime('+30 days'));
-
         $jobExpired = new Job();
         $jobExpired->setCategory($manager->merge($this->getReference('category-programming')));
         $jobExpired->setType('full-time');
@@ -62,7 +58,9 @@ class JobFixtures extends Fixture implements DependentFixtureInterface
         $jobExpired->setToken('job_expired');
         $jobExpired->setEmail('job@example.com');
         $jobExpired->setExpiresAt(new \DateTime('-10 days'));
-
+        $manager->persist($jobSensioLabs);
+        $manager->persist($jobExtremeSensio);
+        $manager->persist($jobExpired);
         for ($i = 100; $i <= 130; $i++) {
             $job = new Job();
             $job->setCategory($manager->merge($this->getReference('category-programming')));
@@ -76,16 +74,10 @@ class JobFixtures extends Fixture implements DependentFixtureInterface
             $job->setActivated(true);
             $job->setToken('job_' . $i);
             $job->setEmail('job@example.com');
-        }
             $manager->persist($job);
-
-        $manager->persist($jobSensioLabs);
-        $manager->persist($jobExtremeSensio);
-        $manager->persist($jobExpired);
-
+        }
         $manager->flush();
     }
-
     /**
      * @return array
      */
@@ -96,4 +88,3 @@ class JobFixtures extends Fixture implements DependentFixtureInterface
         ];
     }
 }
-?>

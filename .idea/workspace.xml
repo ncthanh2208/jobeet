@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e1b872f-89ed-4a74-82b1-6943b9b6f5a2" name="Default Changelist" comment="" />
+    <list default="true" id="6e1b872f-89ed-4a74-82b1-6943b9b6f5a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,6 +136,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VVrbqLPDMBDUKRhkPSnWCh0Fzm" />
@@ -146,7 +154,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads/jobs" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -184,7 +192,8 @@
       <workItem from="1577676200822" duration="6578000" />
       <workItem from="1577696707926" duration="2867000" />
       <workItem from="1577761776857" duration="7537000" />
-      <workItem from="1577937704434" duration="11112000" />
+      <workItem from="1577937704434" duration="11114000" />
+      <workItem from="1578021317850" duration="9763000" />
     </task>
     <servers />
   </component>
@@ -204,18 +213,18 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1577937886867" />
-    <state x="501" y="417" key="NewPhpFileDialog" timestamp="1577952541975">
+    <state x="501" y="417" key="NewPhpFileDialog" timestamp="1578038555224">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="501" y="417" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1577952541975" />
-    <state x="141" y="134" key="SettingsEditor" timestamp="1577938030281">
+    <state x="501" y="417" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1578038555224" />
+    <state x="141" y="134" key="SettingsEditor" timestamp="1578034233885">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="141" y="134" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1577938030281" />
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1577937749765">
+    <state x="141" y="134" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1578034233885" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1578021323185">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1577937749765" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1578021323185" />
     <state x="296" y="226" key="run.anything.popup" timestamp="1577950804334">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
