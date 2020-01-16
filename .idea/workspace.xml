@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e1b872f-89ed-4a74-82b1-6943b9b6f5a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventListener/JobUploadListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/JobType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/FileUploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job/control_panel.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Jobeet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jobeet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/JobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Affiliate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Affiliate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Job.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/JobRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/JobRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/category/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/table.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/table.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +60,40 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jobeet@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jobeet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jobeet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jobeet: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jobeet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jobeet: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="jobs: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -141,6 +203,9 @@
       <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VVrbqLPDMBDUKRhkPSnWCh0Fzm" />
@@ -151,9 +216,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads/jobs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../apache/conf/extra/httpd-vhosts.conf" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -194,6 +261,24 @@
       <workItem from="1577761776857" duration="7537000" />
       <workItem from="1577937704434" duration="11114000" />
       <workItem from="1578021317850" duration="9763000" />
+      <workItem from="1578279895370" duration="11830000" />
+      <workItem from="1578367026337" duration="13543000" />
+      <workItem from="1578454185818" duration="15233000" />
+      <workItem from="1578540149621" duration="662000" />
+      <workItem from="1578540852079" duration="1301000" />
+      <workItem from="1578542356347" duration="119000" />
+      <workItem from="1578542615639" duration="1068000" />
+      <workItem from="1578544083405" duration="816000" />
+      <workItem from="1578544986418" duration="478000" />
+      <workItem from="1578545790215" duration="655000" />
+      <workItem from="1578552351027" duration="6958000" />
+      <workItem from="1578627715833" duration="2138000" />
+      <workItem from="1578629933305" duration="620000" />
+      <workItem from="1578884567585" duration="621000" />
+      <workItem from="1578885701838" duration="13415000" />
+      <workItem from="1578969245384" duration="18471000" />
+      <workItem from="1579057381384" duration="21616000" />
+      <workItem from="1579138570117" duration="9909000" />
     </task>
     <servers />
   </component>
@@ -205,29 +290,53 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="232" y="150" key="#Notifications/0.0.1280.984@0.0.1280.984" timestamp="1577937836352" />
+    <state x="188" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578553738504">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="188" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.984@0.0.1280.984" timestamp="1578553738504" />
+    <state x="468" y="334" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1578545278652">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="468" y="334" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.0.1280.984@0.0.1280.984" timestamp="1578545278652" />
+    <state x="445" y="176" key="#com.intellij.ide.util.MemberChooser" timestamp="1578374300763">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="445" y="176" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1578374300763" />
+    <state x="50" y="250" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578467209249">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="50" y="250" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1578467209249" />
     <state x="265" y="86" key="CommitChangelistDialog2" timestamp="1577773812153">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="265" y="86" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1577773812153" />
-    <state x="420" y="246" key="FileChooserDialogImpl" timestamp="1577937886867">
+    <state x="420" y="246" key="FileChooserDialogImpl" timestamp="1578383506477">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1577937886867" />
-    <state x="501" y="417" key="NewPhpFileDialog" timestamp="1578038555224">
+    <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1578383506477" />
+    <state x="426" y="306" key="NewPhpClassDialog" timestamp="1578911052795">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="501" y="417" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1578038555224" />
-    <state x="141" y="134" key="SettingsEditor" timestamp="1578034233885">
+    <state x="426" y="306" key="NewPhpClassDialog/0.0.1280.984@0.0.1280.984" timestamp="1578911052795" />
+    <state x="501" y="417" key="NewPhpFileDialog" timestamp="1579149668059">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="141" y="134" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1578034233885" />
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1578021323185">
+    <state x="501" y="417" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1579149668059" />
+    <state x="141" y="134" key="SettingsEditor" timestamp="1579141215452">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1578021323185" />
-    <state x="296" y="226" key="run.anything.popup" timestamp="1577950804334">
+    <state x="141" y="134" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1579141215452" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1579138576534">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="296" y="226" key="run.anything.popup/0.0.1280.984@0.0.1280.984" timestamp="1577950804334" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1579138576534" />
+    <state x="296" y="226" key="run.anything.popup" timestamp="1579077788579">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="296" y="226" key="run.anything.popup/0.0.1280.984@0.0.1280.984" timestamp="1579077788579" />
+    <state x="303" y="211" width="672" height="678" key="search.everywhere.popup" timestamp="1578553782922">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="303" y="211" width="672" height="678" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1578553782922" />
   </component>
 </project>

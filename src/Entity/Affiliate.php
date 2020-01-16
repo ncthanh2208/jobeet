@@ -208,11 +208,7 @@ class Affiliate
 
         return $this;
     }
-    // properties
 
-    // contructor
-
-    // getters/setters
 
     /**
      * @ORM\PrePersist
