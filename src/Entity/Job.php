@@ -1,29 +1,39 @@
 <?php
+
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\JobRepository")
  * @ORM\Table(name="jobs")
  * @ORM\HasLifecycleCallbacks()
+ *
+ * @JMS\ExclusionPolicy("all")
  */
 class Job
 {
     public const FULL_TIME_TYPE = 'full-time';
     public const PART_TIME_TYPE = 'part-time';
     public const FREELANCE_TYPE = 'freelance';
+
     public const TYPES = [
         self::FULL_TIME_TYPE,
         self::PART_TIME_TYPE,
         self::FREELANCE_TYPE,
     ];
+
     /**
      * @var int
      *
      * @ORM\Column(type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     *
+     * @JMS\Expose()
+     * @JMS\Type("int")
      */
     private $id;
 
@@ -31,6 +41,9 @@ class Job
      * @var string
      *
      * @ORM\Column(type="string", length=255)
+     *
+     * @JMS\Expose()
+     * @JMS\Type("string")
      */
     private $type;
 
@@ -38,6 +51,9 @@ class Job
      * @var string
      *
      * @ORM\Column(type="string", length=255)
+     *
+     * @JMS\Expose()
+     * @JMS\Type("string")
      */
     private $company;
 
@@ -52,6 +68,9 @@ class Job
      * @var string|null
      *
      * @ORM\Column(type="string", length=255, nullable=true)
+     *
+     * @JMS\Expose()
+     * @JMS\Type("string")
      */
     private $url;
 
@@ -59,6 +78,9 @@ class Job
      * @var string
      *
      * @ORM\Column(type="string", length=255)
+     *
+     * @JMS\Expose()
+     * @JMS\Type("string")
      */
     private $position;
 
@@ -66,6 +88,9 @@ class Job
      * @var string
      *
      * @ORM\Column(type="string", length=255)
+     *
+     * @JMS\Expose()
+     * @JMS\Type("string")
      */
     private $location;
 
@@ -73,6 +98,9 @@ class Job
      * @var string
      *
      * @ORM\Column(type="text")
+     *
+     * @JMS\Expose()
+     * @JMS\Type("string")
      */
     private $description;
 
@@ -80,6 +108,9 @@ class Job
      * @var string
      *
      * @ORM\Column(type="text")
+     *
+     * @JMS\Expose()
+     * @JMS\Type("string")
      */
     private $howToApply;
 
@@ -115,6 +146,9 @@ class Job
      * @var \DateTime
      *
      * @ORM\Column(type="datetime")
+     *
+     * @JMS\Expose()
+     * @JMS\Type("DateTime")
      */
     private $expiresAt;
 
@@ -139,7 +173,6 @@ class Job
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id", nullable=false)
      */
     private $category;
-    // properties
 
     /**
      * @return int
@@ -190,23 +223,34 @@ class Job
     }
 
     /**
-     * @return string|null
+     * @return string|null|UploadedFile
      */
-    public function getLogo() : ?string
+    public function getLogo()
     {
         return $this->logo;
     }
 
     /**
-     * @param string|null $logo
+     * @param string|null|UploadedFile $logo
      *
      * @return self
      */
-    public function setLogo(?string $logo) : self
+    public function setLogo($logo) : self
     {
         $this->logo = $logo;
 
         return $this;
+    }
+
+    /**
+     * @JMS\VirtualProperty
+     * @JMS\SerializedName("logo_path")
+     *
+     * @return string
+     */
+    public function getLogoPath()
+    {
+        return $this->getLogo() ? 'uploads/jobs/' . $this->getLogo()->getFilename() : null;
     }
 
     /**
@@ -445,6 +489,16 @@ class Job
         return $this;
     }
 
+    /**
+     * @JMS\VirtualProperty
+     * @JMS\SerializedName("category_name")
+     *
+     * @return string
+     */
+    public function getCategoryName()
+    {
+        return $this->getCategory()->getName();
+    }
 
     /**
      * @ORM\PrePersist()
@@ -453,6 +507,7 @@ class Job
     {
         $this->createdAt = new \DateTime();
         $this->updatedAt = new \DateTime();
+
         if (!$this->expiresAt) {
             $this->expiresAt = (clone $this->createdAt)->modify('+30 days');
         }
@@ -466,4 +521,3 @@ class Job
         $this->updatedAt = new \DateTime();
     }
 }
-?>

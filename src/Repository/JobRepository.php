@@ -1,11 +1,14 @@
 <?php
+
 namespace App\Repository;
+
 use App\Entity\Affiliate;
 use App\Entity\Category;
 use App\Entity\Job;
 use Doctrine\ORM\AbstractQuery;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\NonUniqueResultException;
+
 class JobRepository extends EntityRepository
 {
     /**
@@ -21,12 +24,15 @@ class JobRepository extends EntityRepository
             ->setParameter('date', new \DateTime())
             ->setParameter('activated', true)
             ->orderBy('j.expiresAt', 'DESC');
+
         if ($categoryId) {
             $qb->andWhere('j.category = :categoryId')
                 ->setParameter('categoryId', $categoryId);
         }
+
         return $qb->getQuery()->getResult();
     }
+
     /**
      * @param int $id
      *
@@ -46,6 +52,7 @@ class JobRepository extends EntityRepository
             ->getQuery()
             ->getOneOrNullResult();
     }
+
     /**
      * @param Category $category
      *
@@ -62,6 +69,7 @@ class JobRepository extends EntityRepository
             ->setParameter('activated', true)
             ->getQuery();
     }
+
     /**
      * @param Affiliate $affiliate
      *

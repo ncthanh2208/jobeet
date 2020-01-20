@@ -1,28 +1,17 @@
 <?php
+
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity()
- * @ORM\Table(name="affiliates")
- */
-/**
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="App\Repository\AffiliateRepository")
  * @ORM\Table(name="affiliates")
  * @ORM\HasLifecycleCallbacks()
  */
 class Affiliate
 {
-    // properties
-
-    public function __construct()
-    {
-        $this->categories = new ArrayCollection();
-    }
-
-    // setters and getters
     /**
      * @var int
      *
@@ -40,7 +29,6 @@ class Affiliate
     private $url;
 
     /**
-     *
      * @var string
      *
      * @ORM\Column(type="string", length=255)
@@ -75,9 +63,11 @@ class Affiliate
      * @ORM\JoinTable(name="affiliates_categories")
      */
     private $categories;
-    // properties
 
-    // constructor
+    public function __construct()
+    {
+        $this->categories = new ArrayCollection();
+    }
 
     /**
      * @return int
@@ -209,7 +199,6 @@ class Affiliate
         return $this;
     }
 
-
     /**
      * @ORM\PrePersist
      */
@@ -218,4 +207,3 @@ class Affiliate
         $this->createdAt = new \DateTime();
     }
 }
-?>
