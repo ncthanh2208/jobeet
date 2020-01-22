@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e1b872f-89ed-4a74-82b1-6943b9b6f5a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Jobeet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jobeet.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AffiliateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AffiliateController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/category/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/category/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +209,9 @@
       <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
       <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/google-mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VVrbqLPDMBDUKRhkPSnWCh0Fzm" />
@@ -274,7 +287,9 @@
       <workItem from="1579138570117" duration="9909000" />
       <workItem from="1579227160151" duration="8339000" />
       <workItem from="1579486351627" duration="654000" />
-      <workItem from="1579489836421" duration="18318000" />
+      <workItem from="1579489836421" duration="18611000" />
+      <workItem from="1579573351047" duration="14673000" />
+      <workItem from="1579659782124" duration="4055000" />
     </task>
     <servers />
   </component>
@@ -314,18 +329,18 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="426" y="306" key="NewPhpClassDialog/0.0.1280.984@0.0.1280.984" timestamp="1578911052795" />
-    <state x="501" y="417" key="NewPhpFileDialog" timestamp="1579509313210">
+    <state x="501" y="417" key="NewPhpFileDialog" timestamp="1579590592802">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="501" y="417" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1579509313210" />
-    <state x="141" y="134" key="SettingsEditor" timestamp="1579489878603">
+    <state x="501" y="417" key="NewPhpFileDialog/0.0.1280.984@0.0.1280.984" timestamp="1579590592802" />
+    <state x="141" y="134" key="SettingsEditor" timestamp="1579659944792">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="141" y="134" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1579489878603" />
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1579489884331">
+    <state x="141" y="134" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1579659944792" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1579659904346">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1579489884331" />
+    <state x="335" y="315" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1579659904346" />
     <state x="296" y="226" key="run.anything.popup" timestamp="1579511709902">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
